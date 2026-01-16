@@ -68,7 +68,7 @@ button{
     transform: translateX(6px);
   }
   .lang-ja .prev-label {
-    transform: translateX(-8px);
+    transform: translateX(-6px);
   }
 
   /* 英語：Now はほんの少し左 */
