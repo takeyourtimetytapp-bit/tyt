@@ -44,3 +44,15 @@ button{
     margin-left: 18px !important;
   }
 }
+@media (max-width: 480px) {
+  /* Language 表示を軽くする（位置は変えない） */
+  .lang-wrap {
+    font-size: 11px;
+    opacity: 0.55;
+  }
+
+  .lang-wrap button {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}
