@@ -38,3 +38,22 @@ button{
     display: none;
   }
 }
+@media (max-width: 480px) {
+  /* ナビが折り返しても崩れない */
+  .nav-wrap {
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 6px;
+  }
+
+  /* スマホでは区切り線が崩れやすいので消す */
+  .nav-wrap > span {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* 履歴の「今」ラベルをスマホだけ少し左に寄せる */
+  .hist-block-title {
+    margin-left: 18px !important;
+  }
+}

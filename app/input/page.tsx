@@ -213,7 +213,7 @@ export default function InputPage() {
           <div style={headerTitle}>TiltGuard</div>
 
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <nav style={headerNav}>
+            <nav style={headerNav}className="nav-wrap">
               <Link href="/">{T.nav_top}</Link>
               <span style={{ opacity: 0.35 }}>|</span>
 
