@@ -139,7 +139,12 @@ function Block5({
   return (
     <div style={{ marginTop: strong ? 0 : 10 }}>
       <div
-      className="hist-block-title"
+      className={
+  "hist-block-title " +
+  (showNowLabel ? "now-label " : "") +
+  (title === T.prev ? "prev-label " : "")
+}
+
         style={{
           ...titleStyle,
 

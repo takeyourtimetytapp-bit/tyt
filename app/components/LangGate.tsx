@@ -19,5 +19,9 @@ export default function LangGate({ children }: { children: ReactNode }) {
     window.location.reload();
   };
 
-  return <div data-lang={lang}>{children}</div>;
+  return (
+  <div className={lang === "ja" ? "lang-ja" : "lang-en"}>
+    {children}
+  </div>
+);
 }

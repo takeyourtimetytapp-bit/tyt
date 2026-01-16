@@ -62,4 +62,18 @@ button{
     line-height: 1.2;
   }
 }
+@media (max-width: 480px) {
+  /* 日本語：今は少し右、Previous(その前)は少し左 */
+  .lang-ja .now-label {
+    transform: translateX(6px);
+  }
+  .lang-ja .prev-label {
+    transform: translateX(-14px);
+  }
+
+  /* 英語：Now はほんの少し左 */
+  .lang-en .now-label {
+    transform: translateX(-4px);
+  }
+}
 
