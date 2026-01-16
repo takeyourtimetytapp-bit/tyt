@@ -212,25 +212,21 @@ export default function InputPage() {
         <header style={header} className="header-row">
   <div style={headerTitle}>TiltGuard</div>
 
-  <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-    <nav style={headerNav} className="nav-wrap">
-      <Link href="/">{T.nav_top}</Link>
-      <span style={{ opacity: 0.35 }}>|</span>
+  <nav style={headerNav} className="nav-wrap">
+    <Link href="/">{T.nav_top}</Link>
+    <span style={{ opacity: 0.35 }}>|</span>
+    <Link href="/history">{T.nav_history}</Link>
 
-      <Link href="/history">{T.nav_history}</Link>
-      <span style={{ opacity: 0.35 }}>|</span>
+    {/* ProはPCだけ出すならそのまま */}
+    <span style={{ opacity: 0.35 }} className="pro-link">|</span>
+    <Link href="/plan" className="pro-link">Pro</Link>
+  </nav>
 
-      <Link href="/plan" className="pro-link">
-        Pro
-      </Link>
-    </nav>
-
-    {/* ★ここに入れる */}
-    <div className="lang-wrap">
-      <LangToggle />
-    </div>
+  <div className="lang-wrap">
+    <LangToggle />
   </div>
 </header>
+
 
 
         <div style={body}>

@@ -78,3 +78,36 @@ button{
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .header-row {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  /* ナビは横並びのまま左側 */
+  .nav-wrap {
+    order: 1;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: nowrap; /* ← ナビを縦にしない */
+  }
+
+  /* Languageだけ下段に落として右寄せ */
+  .lang-wrap {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* スマホでは区切り線を消す（崩れ防止） */
+  .nav-wrap > span {
+    display: none;
+  }
+
+  /* Proはスマホでは消す（既存のまま） */
+  .pro-link {
+    display: none;
+  }
+}
