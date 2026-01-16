@@ -209,23 +209,23 @@ export default function InputPage() {
   return (
     <main style={shell}>
       <section style={card}>
-        <header style={header} className="header-row">
+       <header style={header}>
   <div style={headerTitle}>TiltGuard</div>
 
-  <nav style={headerNav} className="nav-wrap">
-    <Link href="/">{T.nav_top}</Link>
-    <span style={{ opacity: 0.35 }}>|</span>
-    <Link href="/history">{T.nav_history}</Link>
+  <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+    <nav style={headerNav}>
+      <Link href="/">{T.nav_top}</Link>
+      <span style={{ opacity: 0.35 }}>|</span>
+      <Link href="/history">{T.nav_history}</Link>
 
-    {/* ProはPCだけ出すならそのまま */}
-    <span style={{ opacity: 0.35 }} className="pro-link">|</span>
-    <Link href="/plan" className="pro-link">Pro</Link>
-  </nav>
+      <span style={{ opacity: 0.35 }} className="pro-link">|</span>
+      <Link href="/plan" className="pro-link">Pro</Link>
+    </nav>
 
-  <div className="lang-wrap">
     <LangToggle />
   </div>
 </header>
+
 
 
 

@@ -34,80 +34,13 @@ button{
   font: inherit;
 }
 @media (max-width: 480px) {
+  /* Proリンクはスマホでは非表示 */
   .pro-link {
     display: none;
   }
-}
-@media (max-width: 480px) {
-  /* ナビが折り返しても崩れない */
-  .nav-wrap {
-    flex-wrap: wrap;
-    gap: 8px;
-    row-gap: 6px;
-  }
 
-  /* スマホでは区切り線が崩れやすいので消す */
-  .nav-wrap > span {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  /* 履歴の「今」ラベルをスマホだけ少し左に寄せる */
+  /* 履歴の「今」ラベルだけ微調整（必要なら） */
   .hist-block-title {
     margin-left: 18px !important;
-  }
-}
-@media (max-width: 480px) {
-  .header-row {
-    flex-wrap: wrap;
-    row-gap: 6px;
-  }
-
-  .nav-wrap {
-    order: 1;
-  }
-
-  .lang-wrap {
-    order: 2;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .nav-wrap > span {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  .header-row {
-    flex-wrap: wrap;
-    row-gap: 6px;
-  }
-
-  /* ナビは横並びのまま左側 */
-  .nav-wrap {
-    order: 1;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    flex-wrap: nowrap; /* ← ナビを縦にしない */
-  }
-
-  /* Languageだけ下段に落として右寄せ */
-  .lang-wrap {
-    order: 2;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  /* スマホでは区切り線を消す（崩れ防止） */
-  .nav-wrap > span {
-    display: none;
-  }
-
-  /* Proはスマホでは消す（既存のまま） */
-  .pro-link {
-    display: none;
   }
 }
