@@ -68,12 +68,16 @@ button{
     transform: translateX(6px);
   }
   .lang-ja .prev-label {
-    transform: translateX(-10px);
+    transform: translateX(-8px);
   }
 
   /* 英語：Now はほんの少し左 */
   .lang-en .now-label {
-    transform: translateX(-4px);
+    transform: translateX(-2px);
+  }
+  /* 英語：Previous */
+  .lang-en .prev-label {
+    transform: translateX(-12px);
   }
 }
 
