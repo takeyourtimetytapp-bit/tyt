@@ -209,25 +209,29 @@ export default function InputPage() {
   return (
     <main style={shell}>
       <section style={card}>
-        <header style={header}>
-          <div style={headerTitle}>TiltGuard</div>
+        <header style={header} className="header-row">
+  <div style={headerTitle}>TiltGuard</div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <nav style={headerNav}className="nav-wrap">
-              <Link href="/">{T.nav_top}</Link>
-              <span style={{ opacity: 0.35 }}>|</span>
+  <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+    <nav style={headerNav} className="nav-wrap">
+      <Link href="/">{T.nav_top}</Link>
+      <span style={{ opacity: 0.35 }}>|</span>
 
-              <Link href="/history">{T.nav_history}</Link>
-              <span style={{ opacity: 0.35 }}>|</span>
+      <Link href="/history">{T.nav_history}</Link>
+      <span style={{ opacity: 0.35 }}>|</span>
 
-              <Link href="/plan" className="pro-link">
-                Pro
-              </Link>
-            </nav>
+      <Link href="/plan" className="pro-link">
+        Pro
+      </Link>
+    </nav>
 
-            <LangToggle />
-          </div>
-        </header>
+    {/* ★ここに入れる */}
+    <div className="lang-wrap">
+      <LangToggle />
+    </div>
+  </div>
+</header>
+
 
         <div style={body}>
           <div style={h1}>{T.h1}</div>

@@ -57,3 +57,24 @@ button{
     margin-left: 18px !important;
   }
 }
+@media (max-width: 480px) {
+  .header-row {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .nav-wrap {
+    order: 1;
+  }
+
+  .lang-wrap {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-wrap > span {
+    display: none;
+  }
+}
