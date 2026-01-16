@@ -56,3 +56,10 @@ button{
     font-size: 11px;
   }
 }
+@media (max-width: 480px) {
+  .brand-title {
+    font-size: 14px !important;
+    line-height: 1.2;
+  }
+}
+
