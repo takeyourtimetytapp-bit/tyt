@@ -210,7 +210,10 @@ export default function InputPage() {
     <main style={shell}>
       <section style={card}>
        <header style={header}>
-  <div style={headerTitle}>TiltGuard</div>
+  <div style={headerTitle} className="brand-title">
+  TiltGuard
+</div>
+
 
   <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
     <nav style={headerNav}>
