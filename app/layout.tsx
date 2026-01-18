@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LangGate from "./components/LangGate";
 import type { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ja">
-      <body
+            <body
         style={{
           margin: 0,
           background: "#e6e8eb",
@@ -32,7 +33,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         }}
       >
         <LangGate>{children}</LangGate>
+        <Analytics />
       </body>
+
     </html>
   );
 }
