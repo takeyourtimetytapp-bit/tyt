@@ -84,7 +84,7 @@ export default function Home() {
 
           {/* 右側：タグライン + 言語 */}
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <div style={{ fontSize: 12, opacity: 0.55 }}>Take Your Time</div>
+            <div className="tagline"style={{ fontSize: 12, opacity: 0.55 }}>Take Your Time</div>
             <LangToggle />
           </div>
         </div>
@@ -93,7 +93,23 @@ export default function Home() {
         <div style={{ marginTop: 6 }}>
           <div style={{ fontWeight: 700, fontSize: 18 }}>{T.home_headline}</div>
 
-          <div style={{ marginTop: 6, opacity: 0.75, lineHeight: 1.6 }}>{T.home_sub}</div>
+          <div style={{ marginTop: 6, opacity: 0.75, lineHeight: 1.6 }}>
+  {T.home_sub}
+</div>
+
+<div
+  style={{
+    marginTop: 4,
+    fontSize: 12,
+    opacity: 0.5,
+    lineHeight: 1.4,
+  }}
+>
+  {lang === "en"
+    ? "Especially for players who keep queueing even when they know they shouldn’t."
+    : "やめた方がいいと分かってるのに、続けてしまう人へ"}
+</div>
+
         </div>
 
         <div style={{ marginTop: 30, display: "grid", gap: 20 }}>

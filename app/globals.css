@@ -80,4 +80,9 @@ button{
     transform: translateX(-12px);
   }
 }
+@media (max-width: 480px) {
+  .tagline {
+    display: none;
+  }
+}
 
