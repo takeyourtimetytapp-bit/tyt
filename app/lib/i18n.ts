@@ -107,7 +107,7 @@ now: "Now",
 
 show_more: "Show more",
 show_less: "Collapse",
-home_headline: "Not to win. To not break.",
+home_headline: "Not to win. Just don’t break.",
 home_sub: "Log in seconds. See only what to do now.",
 go_input: "Start",
 go_history: "History",
